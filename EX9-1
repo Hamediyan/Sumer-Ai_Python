@@ -1,0 +1,53 @@
+class Time:
+    
+    def __init__(a,h,m,s): 
+        a.h = h
+        a.m = m
+        a.s = s
+    
+    def __init__(a,h,m,s):  
+        a.h = h
+        a.m = m
+        a.s = s   
+        
+    def __gt__ (a,b):
+        a1 = a.h * 3600 + a.m * 60 + a.s
+        b1 = b.h * 3600 + b.m * 60 + b.s
+        if a1 > b1:
+            return True
+        else:
+            return False   
+
+    def __eq__ (a,b):
+        a1 = a.h * 3600 + a.m * 60 + a.s
+        b1 = b.h * 3600 + b.m * 60 + b.s
+        if a1 == b1:
+            return True
+        else:
+            return False        
+        
+        
+    def __it__ (a,b):
+        a1 = a.h * 3600 + a.m * 60 + a.s
+        b1 = b.h * 3600 + b.m * 60 + b.s
+        if a1 < b1:
+            return True
+        else:
+            return False
+        
+        
+    def __sub__ (a,b): 
+        a1=a.h - b.h
+        a2=a.m - b.m
+        a3=a.s - b.s
+       
+        return a1 , a2 ,a3
+    
+    
+        
+    def __add__ (a,b): 
+        a1=a.h + b.h
+        a2=a.m + b.m
+        a3=a.s + b.s
+       
+        return a1,a2,a3
