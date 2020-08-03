@@ -1,0 +1,14 @@
+import numpy as np
+import matplotlib.pyplot as plt
+y=np.sqrt(x)
+y
+z=np.power(25,2)
+z
+theta =10
+sin=np.sin(theta)
+cos=np.cos(theta)
+sin,cos
+meshPoints=np.linspace(-1,1,500)
+meshPoints.shape
+meshPoints[53]
+plt.plot(meshPoints,np.sin(2*np.pi*meshPoints))
